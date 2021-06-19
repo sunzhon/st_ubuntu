@@ -90,14 +90,13 @@ mkdir -p ~/.pyenv/cache
 v=3.9.2|wget http://mirrors.sohu.com/python/$v/Python-$v.tar.xz -P ~/.pyenv/cache/;pyenv install $v
 
 pyenv virtualenv 3.9.2 DataVisulization
+# temporally activate a env
 pyenv activate DataVisulization
+# activate a env for the current folder and subfolder forever in case using 'pyenv local --unset' to cancel
+pyenv local DataVisualization
 sudo apt install python3-pip3
 
-pip3 install numpy
-pip3 install pandas
-pip3 install matplotlib
-pip3 install tensorflow
-pip3 install 
+pip3 install numpy pandas matplotlib seaborn gnureadline tensorflow brokenaxes pyh5
 
 #### Install latex and latexmk 
 
