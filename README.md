@@ -96,10 +96,32 @@ pyenv activate DataVisulization
 pyenv local DataVisualization
 sudo apt install python3-pip3
 
-pip3 install numpy pandas matplotlib seaborn gnureadline tensorflow brokenaxes pyh5
+pip3 install numpy pandas matplotlib seaborn gnureadline tensorflow brokenaxes pyh5 sklearn keras datetime juypter
 
 #### Install latex and latexmk 
 
 
 
-### Install 
+### Install  inkscape for drawing vector graph
+sudo apt install inkscape
+
+### Install typora to write the Markdwon file
+
+sudo apt install typora
+
+### Install latex and latexmk for writing documents and papers
+sudo apt-get install texlive-full
+sudo apt-get update -y
+sudo apt-get install -y latexmk
+
+% This is for transfer the pdf size and connect multipel pdfs into one
+sudo apt-get install ghostscript
+
+### Intsall nvidia-driver, based on Ubuntu20 and P620 nvidia model
+
+sudo apt install nvidia-driver-465
+%Note that, just nvidia-driver-450 is not compatiable with the current model, so choose 465.
+% if need to reinstall a new verison of driver, it is necessary to remove the previous version, using 'sudo apt-get --purge nvidia-driver-*'
+sudo reboot
+% if the graphci cannot open, just backup and then remove /etc/X11/xorg.conf
+
